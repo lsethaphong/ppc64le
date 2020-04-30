@@ -1,7 +1,7 @@
 # ppc64le
 
 25 April 2020
-L. Sethaphong, MSc,PhD
+L. Sethaphong, PhD
 
 When attempting to install and rebuild largely opensourced biotools for a drug discovery pipeline, there are challenges
 in porting to ppc64le architecture.  The vast majority of opensource biotools are written for compilation on x86 architectures.
@@ -32,12 +32,16 @@ Psipred:
 Pfilt: 
 rdock (version 2013):
 
-Dependencies:
+Main Dependencies:
 Rosetta: libsqlite3 libsqlite3-dev
 Sparks-x: libswitch-perl
 MPI dependencies: libmpich-dev libmpich12 mpich
+gcc-5,6,7
+g++-5,6,7
+gfortran - build-essential
 scons
 python python3
+libcppunit (for rdock)
 Notes:
 If make_fragements doesn’t work, be sure to check if the psipred file generated is in the vertical format and file paths are correct.  Always add the verbose flag when debugging.
 Additional Programs:
