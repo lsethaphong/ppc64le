@@ -8,6 +8,10 @@ in porting to ppc64le architecture.  The vast majority of opensource biotools ar
 
 The previous three weeks proved successful in compiling Rosetta v3.10 and its NCBI and other open source tool dependencies.  Unfortunately, for the new fragment maker, the sparks-x utility of a modest sized NN is only provided as a binary.  Therefore, that step of fragment generation needed to be run on an x86 system (VM or bare metal).  Its execution is very fast but short changes the researcher who is attempting to leverage what resources he has avaialble such as pp64le machines in excess.
 
+The detailed word document for installing a running bioinformatics tool-chain in IBM's ppc64le running ubuntu can be found in the word doc version:
+
+"Bionformatics_Tool_chain_ppc64le_version2.doc"
+
 The rough scope of work was the following:
 
 Installing Rosetta
